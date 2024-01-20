@@ -1,0 +1,138 @@
+import { Meta} from "@storybook/blocks";
+import { ColorPalette, ColorItem} from "@storybook/blocks"
+import '../index.css'
+
+<Meta title="System/Colors"/>
+
+<h1>Colors</h1>
+<h2>Steps 1-2: Backgrounds</h2>
+<p>Steps 1 and 2 are designed for app backgrounds and subtle component backgrounds. You can use them interchangeably, depending on the vibe you're going for.</p>
+
+<p>Appropriate applications include:</p>
+<ul>
+<li>Main app background</li>
+<li>Striped table background</li>
+<li>Code block background</li>
+<li>Card background</li>
+<li>Sidebar background</li>
+<li>Canvas area background</li>
+</ul>
+
+<h2>Steps 3–5: Component backgrounds</h2>
+
+<p>Steps 3, 4, and 5 are designed for UI component backgrounds.</p>
+<ul>
+<li>Step 3 is for normal states.</li>
+<li>Step 4 is for hover states.</li>
+<li>Step 5 is for pressed or selected states.</li>
+</ul>
+
+<h2>Steps 6-8: Borders</h2>
+
+<p>Steps 6, 7, and 8 are designed for borders.</p>
+<ul>
+<li>Step 6 is designed for subtle borders on components which are not interactive. For example sidebars, headers, cards, alerts, and separators.</li>
+<li>Step 7 is designed for subtle borders on interactive components.</li>
+<li>Step 8 is designed for stronger borders on interactive components and focus rings.</li>
+</ul>
+
+<h2>Steps 9-10: Solid backgrounds</h2>
+
+<p>Step 9 has the highest chroma of all steps in the scale. In other words, it's the purest step, the step mixed with the least amount of white or black. Because 9 is the purest step, it has a wide range of applications:</p>
+<ul>
+<li>Website/App backgrounds</li>
+<li>Website section backgrounds</li>
+<li>Header backgrounds</li>
+<li>Component backgrounds</li>
+<li>Graphics/Logos</li>
+<li>Overlays</li>
+<li>Coloured shadows</li>
+<li>Accent borders</li>
+</ul>
+
+<p>Step 10 is designed for component hover states, where step 9 is the component's normal state background.</p>
+
+<h2>Steps 11-12: Text</h2>
+<p>Steps 11 and 12 are designed for text.</p>
+<ul>
+<li>Step 11 is designed for low-contrast text.</li>
+<li>Step 12 is designed for high-contrast text.</li>
+</ul>
+<ColorPalette>
+<ColorItem title='Gray' colors={
+        {gray1: '#fcfcfc', 
+        gray2: '#f9f9f9',
+        gray3: '#f0f0f0',
+        gray4: '#e8e8e8',
+        gray5: '#e0e0e0',
+        gray6: '#d9d9d9',
+        gray7: '#cecece',
+        gray8: '#bbbbbb',
+        gray9: '#8d8d8d',
+        gray10: '#838383',
+        gray11: '#646464',
+        gray12: '#202020',
+        }}>
+</ColorItem>
+<ColorItem title='Mauve' colors={
+        {mauve1: '#fdfcfd', 
+        mauve2: '#faf9fb',
+        mauve3: '#f2eff3',
+        mauve4: '#eae7ec',
+        mauve5: '#e3dfe6',
+        mauve6: '#dbd8e0',
+        mauve7: '#d0cdd7',
+        mauve8: '#bcbac7',
+        mauve9: '#8e8c99',
+        mauve10: '#84828e',
+        mauve11: '#65636d',
+        mauve12: '#211f26',
+        }}>
+</ColorItem>
+    <ColorItem title='Red' colors={
+        {red1: '#fffcfc', 
+        red2: '#fff7f7',
+        red3: '#feebec',
+        red4: '#ffdbdc',
+        red5: '#ffcdce',
+        red6: '#fdbdbe',
+        red7: '#f4a9aa',
+        red8: '#eb8e90',
+        red9: '#e5484d',
+        red10: '#dc3e42',
+        red11: '#ce2c31',
+        red12: '#641723',
+        }}></ColorItem>
+
+    <ColorItem title='Blue' colors={
+        {blue1: '#fbfdff', 
+        blue2: '#f4faff',
+        blue3: '#e6f4fe',
+        blue4: '#d5efff',
+        blue5: '#c2e5ff',
+        blue6: '#acd8fc',
+        blue7: '#8ec8f6',
+        blue8: '#5eb1ef',
+        blue9: '#0090ff',
+        blue10: '#0588f0',
+        blue11: '#0d74ce',
+        blue12: '#113264',
+        }}>
+    </ColorItem>
+
+    <ColorItem title='Green' colors={
+        {green1: '#fbfefc', 
+        green2: '#f4fbf6',
+        green3: '#e6f6eb',
+        green4: '#d6f1df',
+        green5: '#c4e8d1',
+        green6: '#adddc0',
+        green7: '#8eceaa',
+        green8: '#5bb98b',
+        green9: '#30a46c',
+        green10: '#2b9a66',
+        green11: '#218358',
+        green12: '#193b2d',
+        }}>
+    </ColorItem>
+</ColorPalette>

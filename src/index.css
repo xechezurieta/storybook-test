@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+  
+
  
 @layer base {
   :root {
@@ -33,6 +37,75 @@
     --ring: 0 0% 3.9%;
  
     --radius: 0.5rem;
+
+    --gray-1: #fcfcfc;
+    --gray-2: #f9f9f9;
+    --gray-3: #f0f0f0;
+    --gray-4: #e8e8e8;
+    --gray-5: #e0e0e0;
+    --gray-6: #d9d9d9;
+    --gray-7: #cecece;
+    --gray-8: #bbbbbb;
+    --gray-9: #8d8d8d;
+    --gray-10: #838383;
+    --gray-11: #646464;
+    --gray-12: #202020;
+
+    --mauve-1: #fdfcfd;
+    --mauve-2: #faf9fb;
+    --mauve-3: #f2eff3;
+    --mauve-4: #eae7ec;
+    --mauve-5: #e3dfe6;
+    --mauve-6: #dbd8e0;
+    --mauve-7: #d0cdd7;
+    --mauve-8: #bcbac7;
+    --mauve-9: #8e8c99;
+    --mauve-10: #84828e;
+    --mauve-11: #65636d;
+    --mauve-12: #211f26;
+    
+
+    --red-1: #fffcfc;
+    --red-2: #fff7f7;
+    --red-3: #feebec;
+    --red-4: #ffdbdc;
+    --red-5: #ffcdce;
+    --red-6: #fdbdbe;
+    --red-7: #f4a9aa;
+    --red-8: #eb8e90;
+    --red-9: #e5484d;
+    --red-10: #dc3e42;
+    --red-11: #ce2c31;
+    --red-12: #641723;
+
+    --blue-1: #fbfdff;
+    --blue-2: #f4faff;
+    --blue-3: #e6f4fe;
+    --blue-4: #d5efff;
+    --blue-5: #c2e5ff;
+    --blue-6: #acd8fc;
+    --blue-7: #8ec8f6;
+    --blue-8: #5eb1ef;
+    --blue-9: #0090ff;
+    --blue-10: #0588f0;
+    --blue-11: #0d74ce;
+    --blue-12: #113264;
+
+    --green-1: #fbfefc;
+    --green-2: #f4fbf6;
+    --green-3: #e6f6eb;
+    --green-4: #d6f1df;
+    --green-5: #c4e8d1;
+    --green-6: #adddc0;
+    --green-7: #8eceaa;
+    --green-8: #5bb98b;
+    --green-9: #30a46c;
+    --green-10: #2b9a66;
+    --green-11: #218358;
+    --green-12: #193b2d;
+    
+    
+    
   }
  
   .dark {
