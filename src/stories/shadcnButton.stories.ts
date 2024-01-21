@@ -2,6 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 
 import { ShadcnButton } from './shadcnButton';
 
+const COLORS = ['Gray', 'Mauve', 'Slate', 'Sage', 'Olive', 'Sand', 'Gold', 'Bronze', 'Brown', 'Yellow', 'Amber', 'Orange', 'Tomato', 'Red', 'Ruby', 'Crimson', 'Pink', 'Plum', 'Purple', 'Violet', 'Iris', 'Indigo', 'Blue', 'Cyan', 'Teal', 'Jade', 'Green', 'Grass', 'Lime', 'Mint', 'Sky']
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
   title: 'ShadcnButton',
@@ -14,16 +15,21 @@ const meta = {
   tags: ['autodocs'],
   // More on argTypes: https://storybook.js.org/docs/api/argtypes
   argTypes: {
-    backgroundColor: { control: 'color' },
-    borderColor: { control: 'boolean' },
-    borderWidth: {
-      options: ['border-0 (0px)', 'border (1px)', 'border-2 (2px)', 'border-4 (4px)', 'border-8 (8px)'],
+    backgroundColor: { 
+      options: COLORS,
       control: { type: 'select' }
     },
     borderRadius: { 
       options: ['rounded-none (0px)', 'rounded-sm (2px)' , 'rounded (4px)', 'rounded-md (6px)', 'rounded-lg (8px)', 'rounded-xl (12px)', 'rounded-2xl (16px)', 'rounded-3xl (24px)', 'rounded-full (9999px)'],
       control: { type: 'select' }
      },
+    disabled: { control: 'boolean' },
+    borderColor: { control: 'boolean' },
+    borderWidth: {
+      options: ['border-0 (0px)', 'border (1px)', 'border-2 (2px)', 'border-4 (4px)', 'border-8 (8px)'],
+      control: { type: 'select' }
+    },
+    
     }
 } satisfies Meta<typeof ShadcnButton>;
 

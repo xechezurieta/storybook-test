@@ -12,6 +12,14 @@ interface ButtonProps {
    */
   backgroundColor?: string;
   /**
+   * Border radius size
+   */
+  borderRadius?: string;
+  /**
+   * Botón desactivado
+   */
+  disabled?: boolean;
+  /**
    * Tamaño del borde
    */
   borderWidth?: string;
@@ -32,10 +40,7 @@ interface ButtonProps {
    * Contenido del botón
    */
   label: string;
-  /**
-   * Border radius size
-   */
-  borderRadius?: string;
+  
    /**
    * Optional click handler
    */
@@ -46,21 +51,27 @@ export const ShadcnButton = ({
   variant = 'default',
   size = 'default',
   backgroundColor,
+  borderRadius,
+  disabled,
   borderWidth,
-  borderColor,
   textColor,
   label,
-  borderRadius,
+  
   ...props
 }: ButtonProps) => {
   const parsedBorderRadius = borderRadius ? borderRadius.split(' ')[0] : '';
   const parsedBorderWidth = borderWidth ? borderWidth.split(' ')[0] : '';
+  const parsedBackgroundColor = backgroundColor ?  backgroundColor.toLowerCase() : ''
+  const bgColor = backgroundColor ? `bg-${parsedBackgroundColor}9` : '';
+  const bgHoverColor = backgroundColor ? `hover:bg-${parsedBackgroundColor}10` : '';
+  const focusVisibleRingColor = backgroundColor ? `focus-visible:ring-${parsedBackgroundColor}8` : '';
   return (
     <Button
       variant={variant}
       size={size}
-      className={`${parsedBorderRadius} ${parsedBorderWidth}`}
-      style={{ backgroundColor, color: textColor}}
+      className={`${bgColor} ${bgHoverColor} ${focusVisibleRingColor} ${parsedBorderRadius} ${parsedBorderWidth}`}
+      style={{ color: textColor}}
+      disabled={disabled}
       {...props}
     >
       {label}
